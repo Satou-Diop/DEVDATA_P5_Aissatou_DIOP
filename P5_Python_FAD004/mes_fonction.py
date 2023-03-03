@@ -75,7 +75,10 @@ def transformer_CSV_JSON(fichier_csv):
 
 #PARTIE TRAITEMENT DES DIFFERENTS TYPES DE FICHIERS
 def recupererDonneeCSV(nom_fichier_csv):
-    donnee = csv.reader(open(nom_fichier_csv,"r"))
+    donnee_csv = csv.reader(open(nom_fichier_csv,"r"))
+    donnee=[]
+    for i in donnee_csv:
+       donnee.append(i)
     return donnee
 
 def recupererDonneeJson(fichierjson):
