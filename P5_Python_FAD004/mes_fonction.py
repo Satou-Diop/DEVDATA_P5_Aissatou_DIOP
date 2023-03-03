@@ -402,6 +402,7 @@ def recupererIndex(donnee_valide):
     a=0
     moyenne=0
     for donnee in donnee_valide:
+	moyenne=0
         for cle in donnee[6].keys():
             moyenne+=calculerMoyenne(donnee[6][cle])
         moyenne=moyenne/len(donnee)
