@@ -173,22 +173,3 @@ elif sortie[1]=="XML":
 
 print("Les données valides sont enregistrées sur "+nom_output_valide+" et les données invalides sur "+nom_output_invalide)
    
-
-'''
-
-formatDonnee=A.Affichage().choisirFormatEntree()
-test=CF.Conversion("Donnée.csv",formatDonnee)
-Donnée=CF.RecupererDonnee(test.get_nouveauFichier())
-print(Donnée.get_donnee())
-
-
-
-liste_eleve=[]
-liste=[[11,2,"AIda","DIop",22,"sqs",1],[11,2,"AIda","DIop",22,"sqs",12]]
-for i in liste:
-    etudiant=E.Eleve(i[0], i[1], i[2], i[3], i[4], i[5],i[6])
-    liste_eleve.append(etudiant)
-
-for i in liste_eleve:
-    print(i.get_nom())
-'''
