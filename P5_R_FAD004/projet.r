@@ -69,7 +69,7 @@ verifierDate <- function(date){
 }
 
 decomposerNote <- function(note){
-  format_note <- "[[:alpha:]]+[\\[ ]+([:digit:]+[\\ . ]?[:digit:]+[\\ | ]?)+[\\: ]{1}[:digit:]+[\\ . ]?[:digit:]?[\\] ]?"
+  format_note <- "[[:alpha:]]+[\\[ ]+([:digit:]+[\\ , ]?[\\ . ]?[:digit:]+[\\ | ]?)+[\\: ]{1}[:digit:]+[\\ , ]?[\\ . ]?[:digit:]?[\\] ]?"
   liste_note=str_extract_all(note, format_note)[[1]]
   if(length(liste_note)==0)
     return('')
@@ -78,11 +78,12 @@ decomposerNote <- function(note){
 
 verifierNote <- function(liste_note){
   liste=list()
-  liste_matiere=c("MATH","FRANCAIS","SVT","ANGLAIS","HG","PC","SCIENCE_PHYSIQUE")
+  liste_matiere=c("MATH","FRANCAIS","FRANÇAIS","SVT","ANGLAIS","HG","PC","SCIENCE_PHYSIQUE")
   nom_matiere  <- "[[:alpha:]]+"
-  format_note <- "[:digit:]+[\\ . ]?[:digit:]+" 
+  format_note <- "[:digit:]+[\\ , ]?[\\ . ]?[:digit:]+" 
   for (i in liste_note){
     matiere=str_extract_all(i,nom_matiere)[[1]]
+    
     if(!any(liste_matiere==str_to_upper(matiere)))
     {
       return('')
@@ -133,7 +134,7 @@ for (i in 1:taille){
   
 }
 print(a)
-
+View(donnee_invalide)
 View(donnee_valide)
 write.csv(donnee_valide,"Valide_CSV.csv")
 write.csv(donnee_invalide,"Invalide_CSV.csv")
