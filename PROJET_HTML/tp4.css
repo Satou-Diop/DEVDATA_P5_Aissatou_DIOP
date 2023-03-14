@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(255, 191, 108);
+}
+.carre1{
+  border: 5px solid black;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 2%;
+  padding: 40px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(248, 0, 0);
+}
+
+.h2_hors_section{
+    border: 3px solid rgb(5, 25, 202);
+    font-size: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px;
+    color: rgb(5, 25, 202);
+    background-color: rgb(179, 115, 19);
+  }
+  .h2_section{
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px;
+    color: rgb(5, 25, 202);
+    font-style: italic;
+    
+    background-color: rgb(179, 115, 19);
+  }
+  .p::first-letter {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    
+  }
+  .section{
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
