@@ -1,0 +1,60 @@
+
+.div1{
+    height: 500px;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    background-color: rgb(204, 225, 245);
+}
+.div2{
+    border: 2px solid rgb(0, 0, 0);
+    display: table-column;
+    width: 40%;
+}
+.div3{
+    border: 2px solid rgb(0, 0, 0);
+    display: table-column;
+    
+    
+}
+.div4{
+    display:block;
+    margin-left: 3%;
+    margin-right:  3%;
+    width: 94%;
+    
+}
+.div5{
+    height:80%;
+  
+}
+aside{
+    border: 2px solid black;
+    margin: 10px;
+    height:80%;
+}
+section{
+    
+    border: 2px solid black;
+    margin: 10px;
+    height:80%;
+}
+header{
+    height: 50px;
+    border: 2px solid black;
+   
+}
+article{
+    height:80%;
+    border: 2px solid black;
+   
+    
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+p{
+    margin-left: 10PX;
+}

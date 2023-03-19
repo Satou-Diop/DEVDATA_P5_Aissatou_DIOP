@@ -1,0 +1,26 @@
+.xml{
+    background-color: rgb(31, 30, 30);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    width: 80%;
+}
+
+.p {
+    display: flex;
+}
+.element{
+    color: rgb(66, 109, 173);
+    font-weight: bold;
+}
+.attribut{
+    color: rgb(156, 202, 255);
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.valeur{
+    color: rgba(255, 141, 88, 0.836);
+}
+.CS{
+    color: grey;
+}
